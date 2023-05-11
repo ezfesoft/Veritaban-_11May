@@ -1,0 +1,83 @@
+INSERT INTO Magazalar (MagazaID, MagazaAdi, Sehir, Ulke)
+VALUES (1, 'ABC Magaza', 'Istanbul', 'Turkiye'),
+       (2, 'XYZ Magaza', 'London', 'Ingiltere'),
+       (3, 'QWE Magaza', 'Berlin', 'Almanya'),
+       (4, 'ASD Magaza', 'Paris', 'Fransa'),
+       (5, 'ZXC Magaza', 'New York', 'ABD');
+
+
+INSERT INTO Urunler (UrunID, KategoriID, UrunAdi, UrunAciklamasi) 
+VALUES (1, 1, 'Laptop', 'Hafif ve taşınabilir'),
+       (2, 1, 'Masaüstü', 'Yüksek performans'),
+       (3, 2, 'Telefon', 'Yeni model'),
+       (4, 2, 'Akıllı Saat', 'Sporcular için'),
+       (5, 1, 'Gaming Laptop', 'Yüksek performans'),
+       (6, 1, 'Tablet', 'İş ve eğlence için'),
+       (7, 2, 'Kulaklık', 'Kablosuz özellikli'),
+       (8, 1, 'Monitör', 'Yüksek çözünürlük'),
+       (9, 2, 'Smart Watch', 'iOS ve Android uyumlu'),
+       (10, 1, 'Yazıcı', 'Lazer teknolojisi'),
+       (11, 2, 'Akıllı Telefon', 'Yüksek performans'),
+       (12, 1, 'Oyun Konsolu', 'En yeni oyunlar'),
+       (13, 2, 'Hafıza Kartı', 'Bellek genişletici'),
+       (14, 1, 'Mouse', 'Kablolu/kablosuz'),
+       (15, 2, 'Powerbank', 'Yüksek kapasiteli');
+
+INSERT INTO Kategoriler (KategoriID, KategoriAdi)
+VALUES (1, 'Bilgisayar'),
+       (2, 'Telefon'),
+       (3, 'Aksesuar'),
+       (4, 'Ofis Malzemeleri');
+
+
+INSERT INTO Satislar (SatisID, MagazaID, KullaniciID, SiparisTarihi)
+VALUES (1, 1, 1, '2023-05-01'),
+       (2, 2, 2, '2023-05-02'),
+       (3, 1, 3, '2023-05-03'),
+       (4, 5, 1, '2023-05-04'),
+       (5, 3, 2, '2023-05-05'),
+       (6, 4, 3, '2023-05-06'),
+       (7, 1, 2, '2023-05-07'),
+       (8, 2, 3, '2023-05-08'),
+       (9, 5, 1, '2023-05-09'),
+       (10, 3, 2, '2023-05-10'),
+       (11, 1, 3, '2023-05-11'),
+       (12, 4, 2, '2023-05-12'),
+       (13, 5, 3, '2023-05-13'),
+       (14, 2, 1, '2023-05-14'),
+       (15, 3, 3, '2023-05-15');
+
+
+INSERT INTO SatisDetaylari (SatisDetayID, SatisID, UrunID, Miktar, BirimFiyat)
+VALUES (1, 1, 1, 2, 5000),
+       (2, 1, 2, 1, 8000),
+       (3, 2, 6, 3, 3000),
+       (4, 2, 7, 1, 1500),
+       (5, 3, 11, 2, 6000),
+       (6, 4, 5, 1, 10000),
+       (7, 4, 9, 1, 4000),
+       (8, 5, 13, 4, 250),
+       (9, 5, 14, 2, 150),
+       (10, 6, 1, 1, 5000),
+       (11, 6, 2, 1, 8000),
+       (12, 7, 4, 2, 2000),
+       (13, 7, 8, 1, 2500),
+       (14, 8, 3, 3, 5000),
+       (15, 9, 10, 1, 7000);
+
+INSERT INTO Kullanicilar (KullaniciID, KullaniciAdi, AdSoyad, Email, Sifre)
+VALUES (1, 'johndoe', 'John Doe', 'john.doe@example.com', 'password1'),
+       (2, 'janedoe', 'Jane Doe', 'jane.doe@example.com', 'password2'),
+       (3, 'bobsmith', 'Bob Smith', 'bob.smith@example.com', 'password3'),
+       (4, 'sarahconnor', 'Sarah Connor', 'sarah.connor@example.com', 'password4'),
+       (5, 'theterminator', 'The Terminator', 'arnold@example.com', 'password5'),
+       (6, 'ellie', 'Ellie Williams', 'ellie@example.com', 'password6'),
+       (7, 'joel', 'Joel Miller', 'joel@example.com', 'password7'),
+       (8, 'tommy', 'Tommy Miller', 'tommy@example.com', 'password8'),
+       (9, 'ellie2', 'Ellie Williams II', 'ellie2@example.com', 'password9'),
+       (10, 'abby', 'Abby Anderson', 'abby@example.com', 'password10'),
+       (11, 'owen', 'Owen Moore', 'owen@example.com', 'password11'),
+       (12, 'tom', 'Tommy Earl Jenkins', 'tom@example.com', 'password12'),
+       (13, 'manny', 'Manuel Ortega', 'manny@example.com', 'password13'),
+       (14, 'isaac', 'Isaac Dixon', 'isaac@example.com', 'password14'),
+       (15, 'lev', 'Lev Benioff', 'lev@example.com', 'password15');
